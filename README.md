@@ -71,7 +71,7 @@ Employee permission level 3:
 * generate register code for patients and employees level 1 and 2
 
 ## Endpoints:
-### PATCH localhost:8080/api/employee/{id}/edit-permission-level
+* ### PATCH localhost:8080/api/employee/{id}/edit-permission-level
 id - id of an employee\
 permission-level - mandatory param
 ###### Example request:
@@ -80,28 +80,28 @@ PATCH localhost:8080/api/employee/4/edit-permission-level?permission-level=2\
 Empty
 
 
-### GET http://localhost:8080/api/employee/{id} 
+* ### GET http://localhost:8080/api/employee/{id} 
 id - id of an employee\
 ###### Example request:
 GET http://localhost:8080/api/employee/4
 ###### Body:
 Empty
 
-#### DELETE http://localhost:8080/api/employee/examination/{id}
+* ### DELETE http://localhost:8080/api/employee/examination/{id}
 id - id of an examination
 ###### Example request:
 DELETE http://localhost:8080/api/employee/examination/1
 ###### Body:
 Empty
 
-### GET http://localhost:8080/api/employee/examination/{id}
+* ### GET http://localhost:8080/api/employee/examination/{id}
 id - id of an examination
 ###### Example request:
 GET http://localhost:8080/api/employee/examination/1
 ###### Body:
 Empty
 
-### GET http://localhost:8080/api/employee/institution/{id}/examinations
+* ### GET http://localhost:8080/api/employee/institution/{id}/examinations
 id - id of an institution
 ###### Example request:
 GET http://localhost:8080/api/employee/institution/1/examinations
@@ -109,14 +109,14 @@ GET http://localhost:8080/api/employee/institution/1/examinations
 Empty
 
 
-### GET http://localhost:8080/api/employee/patient/{id}/examinations
+* ### GET http://localhost:8080/api/employee/patient/{id}/examinations
 id - id of a patient
 ###### Example request:
 GET http://localhost:8080/api/employee/patient/1/examinations
 ###### Body:
 Empty
 
-### POST http://localhost:8080/api/employee/add-examination
+* ### POST http://localhost:8080/api/employee/add-examination
 ###### Example request:
 POST http://localhost:8080/api/employee/add-examination
 ###### Body:
@@ -130,7 +130,7 @@ POST http://localhost:8080/api/employee/add-examination
 }
 ```
 
-### DELETE http://localhost:8080/api/employee/patient/{id}
+* ### DELETE http://localhost:8080/api/employee/patient/{id}
 id - id of a patient
 ###### Example request:
 DELETE http://localhost:8080/api/employee/patient/2
@@ -138,7 +138,7 @@ DELETE http://localhost:8080/api/employee/patient/2
 Empty
 
 
-### PUT http://localhost:8080/api/employee/patient/{id}/edit
+* ### PUT http://localhost:8080/api/employee/patient/{id}/edit
 id - id of a patient
 ###### Example request:
 PUT http://localhost:8080/api/employee/patient/2/edit
@@ -158,7 +158,7 @@ PUT http://localhost:8080/api/employee/patient/2/edit
 ```
 
 
-### POST localhost:8080/api/employee/add-patient
+* ### POST localhost:8080/api/employee/add-patient
 ###### Example request:
 POST localhost:8080/api/employee/add-patient
 ###### Body:
@@ -176,7 +176,7 @@ POST localhost:8080/api/employee/add-patient
 }
 ```
 
-### GET localhost:8080/api/employee/patient/{id}
+* ### GET localhost:8080/api/employee/patient/{id}
 id - id of a patient
 ###### Example request:
 GET localhost:8080/api/employee/patient/1
@@ -184,7 +184,7 @@ GET localhost:8080/api/employee/patient/1
 Empty
 
 
-### GET localhost:8080/api/employee/generate-register-code
+* ### GET localhost:8080/api/employee/generate-register-code
 permission-level - mandatory param\
 institution-id - mandatory param
 ###### Example request:
@@ -192,7 +192,7 @@ GET localhost:8080/api/employee/generate-register-code?permission-level=1&instit
 ###### Body:
 Empty
 
-### POST localhost:8080/api/employee/login
+* ### POST localhost:8080/api/employee/login
 ###### Example request:
 POST localhost:8080/api/employee/login
 ###### Body:
@@ -206,7 +206,7 @@ POST localhost:8080/api/employee/login
 ```
 
 
-### POST localhost:8080/api/employee/register
+* ### POST localhost:8080/api/employee/register
 ###### Example request:
 POST localhost:8080/api/employee/register
 ###### Body:
@@ -224,13 +224,13 @@ POST localhost:8080/api/employee/register
 ```
 
 
-### DELETE localhost:8080/api/employee/logout
+* ### DELETE localhost:8080/api/employee/logout
 ###### Example request:
 DELETE localhost:8080/api/employee/logout
 ###### Body:
 Empty
 
-### GET http://localhost:8080/api/medical-examination
+* ### GET http://localhost:8080/api/medical-examination
 medical-examination-id - mandatory param \
 date-of-birth - mandatory param
 ###### Example request:
@@ -238,7 +238,7 @@ GET http://localhost:8080/api/medical-examination?medical-examination-id=5&date-
 ###### Body:
 Empty
 
-### POST http://localhost:8080/api/patient/register
+* ### POST http://localhost:8080/api/patient/register
 ###### Example request:
 POST http://localhost:8080/api/patient/register
 ###### Body:
@@ -254,7 +254,7 @@ POST http://localhost:8080/api/patient/register
 }
 ```
 
-### POST http://localhost:8080/api/patient/login
+* ### POST http://localhost:8080/api/patient/login
 ###### Example request:
 POST http://localhost:8080/api/patient/login
 ###### Body:
@@ -267,19 +267,19 @@ POST http://localhost:8080/api/patient/login
 }
 ```
 
-### DELETE http://localhost:8080/api/patient/logout
+* ### DELETE http://localhost:8080/api/patient/logout
 ###### Example request:
 DELETE http://localhost:8080/api/patient/logout
 ###### Body:
 Empty
 
-### GET http://localhost:8080/api/patient/my-medical-examinations
+* ### GET http://localhost:8080/api/patient/my-medical-examinations
 ###### Example request:
 GET http://localhost:8080/api/patient/my-medical-examinations
 ###### Body:
 Empty
 
-### GET http://localhost:8080/api/patient/account
+* ### GET http://localhost:8080/api/patient/account
 ###### Example request:
 GET http://localhost:8080/api/patient/account
 ###### Body:
